@@ -1,8 +1,8 @@
 const Main = (props) => {
     return(
       <div>
-        <h1>Umayyads are great!</h1>
-        <AllPeople/>
+        <h1>Umayyads were...Mixed Bag</h1>
+        <Body/>
       </div>
     )
 }

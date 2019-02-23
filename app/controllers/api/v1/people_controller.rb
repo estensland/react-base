@@ -6,7 +6,7 @@ module Api
       end
 
       def create
-        fruit = Person.create(person_params)
+        person = Person.create(person_params)
         render json: person
       end
 
@@ -23,7 +23,7 @@ module Api
       private
 
       def person_params
-        params.require(:person).permit(:label)
+        params.require(:person).permit(:name, :description)
       end
     end
   end
